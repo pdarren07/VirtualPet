@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <title>Snowman</title>
+
+  </head>
+  <footer>
+    <end> Found on Google </end>
+  </footer>
+</html>
+
 void setup()
 {
   size(800,800);
