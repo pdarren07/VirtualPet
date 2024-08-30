@@ -1,24 +1,3 @@
-‹!DOCTYPE html>
-      <head>
-            ‹meta charset="utf-8">
-            ‹ title›virtual Pet</title>
-            clink href='http://fonts.googleapis.com/css?family=0pen+Sans* rel='stylesheet* type='text/css'>
-            clink rel="stylesheet" href="styles.css*>
-            «script src="processing-js"*/script>
-      </head> 
-      <body>
-            <header>
-            <hi>Snowman</h1>
-      </header>
-      ‹section id="content">
-      </ canvas>
-            ‹canvas id="virtualPet" data-processing-sources="virtualPet.pde">
-      ‹/section>
-      <footer>
-            found on Google
-      </footer>
-      </body>
-</html>
 void setup()
 {
   size(800,800);
