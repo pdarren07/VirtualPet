@@ -1,61 +1,71 @@
 void setup()
 {
-  size(1000,1000);
+  size(800,800);
 }
-//Scale this up 5 times
-int x = 250;
-int y = 280;
+int x = 400;
+int y = 500;
 void draw()
 {
-  //Headband
-  fill(144, 238, 144);
-  noStroke();
-  ellipse(x,y-125, 160, 160);
-  //headband ears
-  ellipse(x-70, y-190, 80, 80);
-  
-  ellipse(x+70, y-190, 80, 80);
-  fill(246, 246, 246);
-  ellipse(x-70, y-190, 65, 65);
-  ellipse(x+70, y-190, 65, 65);
-  fill(221, 246, 217);
-  ellipse(x-75, y-190, 45, 45);
-  ellipse(x+75, y-190, 45, 45);
-  fill(40, 95, 23);
-  ellipse(x-75, y-190, 35, 35);
-  ellipse(x+75, y-190, 35, 35);
-  //Head
-  fill(196, 133, 90);
-  ellipse(x, y-120, 150, 150);
   //Body
-  fill(196, 133, 90);
   noStroke();
-  ellipse(x, y+30, 210, 280);
-  //mouth area
-  fill(112, 57,42);
+  fill(255,255,255);
+  ellipse(x,y+20,340,320);
+  //Scarf
+  fill(55,110,217);
+  stroke(55,110,217);
+  strokeWeight(15);
+  arc(x, y-100, 200, 130, 0, PI);
+  triangle(x+20, y-100, x+65,y+25, x+95, y+30);
+  //Head
   noStroke();
-  rect(x-32, y-147, 64, 64, 10);
-  fill(128,74,58);
-  noStroke();
-  rect(x-30, y-145, 60, 60);
-  fill(112, 57,42);
-  noStroke();
-  ellipse(x, y-115, 10, 30);
+  fill(255,255,255);
+  ellipse(x,y-170,280,260);
   
-  //Floor cutoff
-  fill(204,204,204);
-  noStroke();
-  rect(x-250, y+125, 500, 500);
-  //arm
-  fill(195, 139, 103);
-  rotate(PI/3);
-  noStroke();
-  ellipse(x+150, y-410, 60, 90);
-  fill(195, 139, 103);
-  rotate(5*(PI/6));
-  noStroke();
-  ellipse(x+820, y-1000, 60, 90);
-  fill(195, 139, 103);
-  ellipse(x, y, 60, 90);
+  //Button
+  fill(0,0,0);
+  ellipse(x,y+60,25,25);
+  ellipse(x,y,25,25);
+  
+  //Eyes
+  ellipse(x+60,y-170,25,40);
+  ellipse(x-60,y-170,25,40);
+  
+  //Blush
+  fill(236,181,186);
+  ellipse(x+80,y-140,30,15);
+  ellipse(x-80,y-140,30,15);
+  
+  //Mouth
+  fill(0,0,0);
+  ellipse(x,y-130,50,40);
+  fill(255,255,255);
+  ellipse(x,y-135,50,40);
+  rect(x+20,y-140,25,25);
+  rect(x-45,y-140,25,25);
+  
+  //Nose
+  fill(239,151,68);
+  ellipse(x,y-150,25,25);
+  triangle(x+8.5,y-160,x,y-137,x+25,y-135);
+  
+  //Hat
+  fill(0,0,0);
+  ellipse(x,y-280, 260, 80);
+  fill(154,202,217);
+  ellipse(x,y-290, 130, 40);
+  fill(0,0,0);
+  ellipse(x,y-300, 130, 40);
+  ellipse(x,y-370, 130, 40);
+  rect(x-65, y-366, 130, 60);
 
+  //Hands
+  fill(88,57,39);
+  stroke(88,57,39);
+  strokeWeight(10);
+  line(x+165, y, x+260, y-55);
+  line(x+215, y-30, x+240, y-70);
+  line(x+215, y-30, x+255, y-30);
+  line(x-165, y, x-260, y-55);
+  line(x-215, y-30, x-240, y-70);
+  line(x-215, y-30, x-255, y-30);
 }
